@@ -45,7 +45,7 @@ if (isset($_POST["login"])) {
         session_start();
         $_SESSION["Username"]=$_POST["signinusername"];
         $_SESSION["Password"]=$_POST["signinpassword"];
-        header("Location:welcometosession.php ");
+        header("Location:singin.php ");
     }
     else {
         $signinError="Make sure all fields are filled in correctly";
